@@ -25,3 +25,17 @@ class Dog extends Animal {
   }
 }
 
+const dog = new Dog();
+dog.bark();
+dog.move(10);
+dog.bark();
+
+// each member default to be public
+// When a member is marked private, it cannot be accessed from outside
+
+class Animal {
+  private name: string;
+  constructor(theName: string) { this.name = theName; }
+}
+
+new Animal("Cat").name; // Error: 'name' is private;
