@@ -11,7 +11,6 @@ class Greeter {
 
 let greeter = new Greeter("world");
 
-
 // class inherite
 class Animal {
   move(distanceInMeters: number = 0) {
